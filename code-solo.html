@@ -5,12 +5,36 @@
     <style>
         /* Wally the Wombat wants to update their profile - let's help them out. */
         /* 1. Change the color of the <h1> tag. Remember, the property to change the color of text is color and the value is the name of the color you want (or use a hex code!) */
-        
+        h1 {
+            color: #4B0082; /* Indigo */
+        }
         
         /* 2. Using body as our selector, change the background-color to whatever color you want. */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f0f8ff; /* Alice Blue */
+        }
+
+        nav{
+            height: 40px;
+            display: flex;
+           gap:20px;
+
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd; /* Light gray on hover */
         }
 
         .profile-container {
@@ -18,25 +42,26 @@
             margin: 20px auto;
             padding: 20px;
             border: 1px solid #ccc;
+            border-radius: 10px;
         }
 
         /* This is a class selector - more on this next session! */
         .wombat-image {
             /* 3. Change the value of max-width to 400px. */
-            max-width: 300px;
+            max-width: 400px;
             
             /* 4. Add a property called border-radius and set the value to 50%. What happens? */
-
-
+            border-radius: 50%;
+            /* The image becomes a circle (if it's square) or an oval (if it's rectangular). */
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
+    <nav class="navbar">
         <a href="index.html">Do Now</a>
         <a href="code-along.html">Code Along</a>
         <a href="code-solo.html">Code Solo</a>
-    </div>
+    </nav>
     
     <div class="profile-container">
         <h1>Wally the Wombat</h1>

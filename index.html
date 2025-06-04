@@ -2,6 +2,9 @@
 <html>
   <head>
      <title>Do Now</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -11,12 +14,14 @@
 
     /* 1. Change the number after width to a different number (keep the px!). What happened to the image of Drake? */
     img {
-      width: 250px;
+      width: 400px;
+      height: 400px;
+
     }
 
     /* 2. Change the color from black to green (or a different color of your choice). What happened to the text that says "Instagram" and "Drake"? */
     h1 {
-      color:black;
+      color:red;
     }
     
     .profile {
@@ -26,6 +31,9 @@
     
     .pfp {
       border-radius: 300px;
+      justify-content: center;
+      margin: 0 auto;
+      display: flex;
     }
     
     .blue-border {
@@ -93,7 +101,7 @@
     <h1>Drake</h1>
     <h2>@champagnepapi</h2>
     <div class="message-button">
-      <h3 class="blue-border"> Message</h3>
+      <button class="blue-border"> Message</button>
     </div>
     <div class="profile-info">
       <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5ed578988b3c370006234c35%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D43%26cropX2%3D1074%26cropY1%3D49%26cropY2%3D1080" class="pfp">
@@ -104,7 +112,7 @@
       </div>
     </div>
     <div class="f-or-unf">
-      <h3 class="blue-border">Follow</h3>
+      <button class="blue-border">Follow</button>
       <h3 class="blue-border">Unfollow</h3>
     </div>
   </body>
